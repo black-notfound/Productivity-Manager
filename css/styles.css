@@ -18,8 +18,8 @@ html, body {
 
 .navbar {
     width: inherit;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
     display: flex;
     justify-content: space-between;
     background-color: var(--branco) !important;
@@ -54,14 +54,15 @@ html, body {
     width: inherit;
     height: inherit;
     margin: 0;
-    padding-top: 25px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .title {
     display: flex;
     justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .taskButton {
@@ -76,7 +77,7 @@ html, body {
 
 .mainContent {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 1.5fr;
     gap: 2.5rem;
 }
 
@@ -89,6 +90,19 @@ html, body {
 /* Calendar styles */
 .fc {
     background-color: var(--branco);
+    border-radius: 16px;
+    padding: 1.5rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+ /* Toolbar */
+.fc-header-toolbar {
+    padding: 15px;
+    margin-bottom: 0 !important;
+}
+
+.fc-toolbar-title {
+    margin-bottom: 15px !important;
 }
 
 .fc .fc-button-primary {
@@ -97,6 +111,94 @@ html, body {
     color: #000000 !important;
 }
 
+/* Legend */
+.legend {
+    margin-left: 0 !important;
+    padding: 0;
+    font-size: 25px;
+}
+
+.work {
+    color: #000000;
+    font-size: 35px;
+}
+
+.study {
+    color: rgb(14, 148, 14);
+    font-size: 35px;
+}
+
+.social {
+    color: rgb(50, 50, 246);
+    font-size: 35px;
+}
+
+.other {
+    color: rgb(187, 12, 187);
+    font-size: 35px;
+}
+
+/* Week Days */
+.fc-col-header-cell {
+    border: none !important;
+    padding-bottom: 0.75rem;
+}
+
+.fc-col-header-cell-cushion {
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Grid */
+.fc-daygrid {
+    gap: 0.75rem;
+}
+
+.fc-daygrid-day {
+    border: none;
+}
+
+.fc-daygrid-day-frame {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 0.5rem;
+    min-height: 90px;
+    transition: all 0.2s ease;
+}
+
+.fc-daygrid-day-frame:hover {
+    background-color: #cfd0d2;
+}
+
+.fc-daygrid-day-number {
+    color: #374151;
+    text-decoration: none;
+}
+
+.fc-day-today .fc-daygrid-day-frame {
+    border: 2px solid #111827;
+    background-color: #ffffff;
+}
+
+.fc-day-other .fc-daygrid-day-frame {
+    background-color: #9ea2a9;
+}
+
+.fc-day-other .fc-daygrid-day-frame .fc-daygrid-day-number {
+    color: #000000;
+    font-weight: bolder;
+}
+
+.fc-day-other .fc-daygrid-day-frame:hover {
+    background-color: #cfd0d2;
+}
+
+
+
+/* Tasks styles */
 .tasks{
     background-color: var(--branco);
     height: 55%;
