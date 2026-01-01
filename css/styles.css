@@ -116,6 +116,15 @@ html, body {
     margin-left: 0 !important;
     padding: 0;
     font-size: 25px;
+    display: flex;
+    gap: 5px;
+}
+
+@media (max-width: 768px) {
+    .legend {
+        font-size: 15px;
+        display: flex;
+    }
 }
 
 .work {
@@ -123,9 +132,21 @@ html, body {
     font-size: 35px;
 }
 
+@media (max-width: 768px) {
+    .work {
+        font-size: 15px;
+    }
+}
+
 .study {
     color: rgb(14, 148, 14);
     font-size: 35px;
+}
+
+@media (max-width: 768px) {
+    .study {
+        font-size: 15px;
+    }
 }
 
 .social {
@@ -133,9 +154,21 @@ html, body {
     font-size: 35px;
 }
 
+@media (max-width: 768px) {
+    .social {
+        font-size: 15px;
+    }
+}
+
 .other {
     color: rgb(187, 12, 187);
     font-size: 35px;
+}
+
+@media (max-width: 768px) {
+    .other {
+        font-size: 15px;
+    }
 }
 
 /* Week Days */
@@ -169,6 +202,12 @@ html, body {
     transition: all 0.2s ease;
 }
 
+@media (max-width: 768px) {
+    .fc-daygrid-day-frame {
+        height: 55px;
+    }
+}
+
 .fc-daygrid-day-frame:hover {
     background-color: #cfd0d2;
 }
@@ -197,9 +236,32 @@ html, body {
 }
 
 
-
 /* Tasks styles */
-.tasks{
+.tasks {
     background-color: var(--branco);
-    height: 55%;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.taskHeader {
+    padding: 15px;
+}
+
+.taskContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.taskFooter {
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-top: #6b72804b solid 1px;
 }
