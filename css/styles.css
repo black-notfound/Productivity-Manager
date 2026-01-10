@@ -292,10 +292,11 @@ body.dark .fc-daygrid-day-number {
     border-radius: 12px;
     margin: 5px;
     padding: 0.5rem;
-    min-height: 100px !important;
-    min-width:  75px !important;
+    min-height: 40px !important;
     transition: all 0.2s ease;
 }
+
+/* TO DO: Responsividade dos dias do calendário no celular */
 
 @media (max-width: 768px) {
     .fc-daygrid-day-frame {
