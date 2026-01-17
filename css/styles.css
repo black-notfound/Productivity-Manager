@@ -117,7 +117,7 @@ body.dark .navButton:hover {
 }
 
 body.dark .hamburger span {
-    color: #ffffff;
+    background-color: #ffffff;
 }
 
 @media (max-width: 768px) {
