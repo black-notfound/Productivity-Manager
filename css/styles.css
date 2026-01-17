@@ -170,7 +170,7 @@ body.dark .main-container {
 
 @media (max-width: 768px) {
     .main-container {
-        padding: 20px;
+        padding: 10px;
     }
 }
 
@@ -245,7 +245,7 @@ body.dark .taskButton:hover {
 
 @media (max-width: 768px) {
     .fc{
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -254,9 +254,17 @@ body.dark .fc {
 }
 
  /* Toolbar */
+@media (max-width: 768px) {
+    .fc-toolbar{
+        align-items: normal !important;
+    }
+}
+
 .fc-header-toolbar {
     padding: 15px;
-    margin-bottom: 0 !important;
+    gap: 8px;
+    position: relative;
+    padding-top: 8px;
 }
 
 @media (max-width: 768px) {
@@ -276,16 +284,40 @@ body.dark .fc {
     }
 }
 
+.fc-toolbar-chunk:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fc-toolbar-chunk:not(:first-child) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .fc-toolbar-chunk{
+        width: 30%;
+    }
+}
+
+
 .fc .fc-button-primary {
     background-color: var(--white) !important;
     border: none !important;
     color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 
 @media (max-width: 768px) {
     .fc-button-group{
-        top: 1px !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 }
 
@@ -300,14 +332,30 @@ body.dark .fc .fc-button-primary {
     padding: 0;
     font-size: 25px;
     display: flex;
-    gap: 5px;
+    gap: 12px;
 }
 
 @media (max-width: 768px) {
     .legend {
         font-size: 15px;
         display: flex;
+        align-items: center;
+        justify-content: left !important;
+    }
+}
+
+.divLegend {
+    margin-left: 0 !important;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+}
+
+@media (max-width: 768px) {
+    .divlegend {
+        display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 }
 
@@ -374,6 +422,13 @@ body.dark .fc .work {
 }
 
 /* Grid */
+@media (max-width: 768px) {
+    .fc-scroller {
+        
+    }
+}
+
+
 .fc-scrollgrid-sync-table {
     height: auto;
 }
@@ -462,7 +517,7 @@ body.dark .tasks {
 
 @media (max-width: 768px) {
     .tasks{
-        width: 95%;
+        width: 100%;
     }
 }
 

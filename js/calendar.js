@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (title) {
     legend.innerHTML = `
-        <div><span class="work">●</span> Work</span></div>
-        <div><span class="study">●</span> Study</span></div>
-        <div><span class="social">●</span> Social</span></div>
-        <div><span class="other">●</span> Other</span></div>
+        <div class="divLegend" ><span class="work">●</span> Work</span></div>
+        <div class="divLegend" ><span class="study">●</span> Study</span></div>
+        <div class="divLegend" ><span class="social">●</span> Social</span></div>
+        <div class="divLegend" ><span class="other">●</span> Other</span></div>
     `;
 
     title.insertAdjacentElement('afterend', legend);
